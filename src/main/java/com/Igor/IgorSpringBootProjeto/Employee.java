@@ -22,8 +22,6 @@ public class Employee {
         this.hoursWorked = hoursWorked;
     }
 
-    // Getters e setters
-
     public String getId() {
         return id;
     }
