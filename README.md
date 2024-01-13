@@ -1,5 +1,5 @@
 ## Descrição
-Um sistema de inserção, administração e listagem de funcionários utilizando a linguagem Java e as tecnologias SpringBoot, MongoDB, Maven, BootStrap para CSS e JSON.
+Um sistema CRUD de inserção, administração e listagem de funcionários utilizando a linguagem Java e as tecnologias SpringBoot, MongoDB, Maven, BootStrap para CSS e JSON.
 
 ## Funcionalidades
 - Adicionar Funcionário
