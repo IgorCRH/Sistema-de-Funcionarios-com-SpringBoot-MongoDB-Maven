@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Funcionários</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Gerenciamento de Funcionários</h1>
+
+    <!-- Formulário para adicionar um novo funcionário -->
+    <form id="employeeForm">
+        <div class="form-group">
+            <label for="name">Nome do Funcionário:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salário:</label>
+            <input type="number" class="form-control" id="salary" required>
+        </div>
+        <div class="form-group">
+            <label for="position">Cargo:</label>
+            <input type="text" class="form-control" id="position" required>
+        </div>
+        <div class="form-group">
+            <label for="hoursWorked">Horas Trabalhadas:</label>
+            <input type="number" class="form-control" id="hoursWorked" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="addEmployee()">Adicionar Funcionário</button>
+        <button type="button" class="btn btn-danger" onclick="removeEmployee()">Remover Funcionário</button>
+    </form>
+
+    <hr>
+
+    <!-- Lista de funcionários -->
+    <h2>Lista de Funcionários</h2>
+    <ul id="employeeList" class="list-group">
+    </ul>
+</div>
+
+<!-- Caixa de pesquisa -->
+<div class="form-group">
+    <label for="searchName">Pesquisar Funcionário por Nome:</label>
+    <input type="text" class="form-control" id="searchName" required>
+</div>
+
+<div class="form-group">
+    <label for="newSalary">Novo Salário (Selecione um funcionário na lista):</label>
+    <input type="number" class="form-control" id="newSalary" required>
+</div>
+
+<button type="button" class="btn btn-primary" onclick="searchEmployee()">Pesquisar Funcionário</button>
+<button type="button" class="btn btn-success" onclick="updateSalary()">Atualizar Salário</button>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
