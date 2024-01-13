@@ -64,5 +64,4 @@ public class Employee {
         this.hoursWorked = hoursWorked;
     }
 
-    // Outros métodos, se necessário
 }
